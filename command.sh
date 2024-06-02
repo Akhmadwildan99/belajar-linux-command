@@ -56,4 +56,27 @@ find . -type d -name fruits
 find . -type f -name foo
 find . -type f -iname FOO
 
+### -or
+find . -type d -name cars -or -name fruits
+
+### -not -path (mengko sekk yo)
+### find files that have more than 100 characters (bytes) in them 
+find . -type f  -size +100c
+### find files that have less than 100 characters (bytes) in them 
+find . -type f  -size -100c
+
+### find files that have more than 100 but smaller then 1MB
+find . -type f  -size +100c -size -1M
+
+### Search files edited more than 3 days ago
+find . -type f -mtime +3
+
+### Search files edited in the last 24H
+find . -type f -mtime -1
+
+### search than delete file with option -delete
+find . -type f -name file-for-delete.txt -delete
+
+### execute command on each result of the search [-exec cat {} \;]
+find . -type f -name command.sh -exec cat {} \; #execute cat or print the content 
 

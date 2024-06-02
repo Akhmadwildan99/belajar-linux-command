@@ -1,0 +1,1 @@
+Hi Im Wildan. Im software enginer. Now, I working at BTI as lead Backend dev.
