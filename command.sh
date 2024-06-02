@@ -20,3 +20,40 @@ rmdir foo bar
 ### we can use rm command with options -rf
 rm -rf foo bar
 
+### create new file
+touch foo
+touch bar
+
+### move file one or more to other directory
+mv foo bar fruits # file foo and bar will move to fruits folder
+
+
+### copy file to another file
+touch foo
+touch bar
+cp foo bar
+
+### copy folder you need to add the -r option to recursively the whole folder contents
+mkdir fruits
+mkdir cars
+cp -r fruits cars
+
+
+### open sintax
+open <filename> # open the specific file
+open . # open the whole directory (finder if you using the macos)
+open .. # parent directory (finder if you using the macos)
+
+
+
+### find command
+find . -name '*.js' # to find any files under tree current with name (*=any) and have .js  # It is importent to use quote becaus * is special character
+
+### find  with -type (type of symbol -type f for file, -type d for directory and -type l for links) and 
+#-name (-name for sensitive search and -iname for case-insensitive). This command is still under tree current
+find . -type d -name example-target
+find . -type d -name fruits
+find . -type f -name foo
+find . -type f -iname FOO
+
+
