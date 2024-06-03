@@ -80,3 +80,33 @@ find . -type f -name file-for-delete.txt -delete
 ### execute command on each result of the search [-exec cat {} \;]
 find . -type f -name command.sh -exec cat {} \; #execute cat or print the content 
 
+### Hard links ln uses for link from file to another file
+ln <original> <link> 
+
+### Soft link ln with option -s
+ln -s <original> <link> 
+
+#### The different between hard link and soft link is when we remove the original file. In the hardlink ####
+#### we still access link file And soft link we can not access the link file ####
+
+### gzip compress >> file will be add .gz extension by default
+gzip filename
+
+### decompress .gz file
+gzip -d filename
+
+### gunzip this command will be decompress .zg without -d option 
+gunzip filename.gz
+
+### -c will copy the content file .gz to another file
+gunzip -c filename.gz > anotherfilename
+
+
+### tar command
+tar -cf archive.tar file1 file2 # -c option for create and -f option is used to write to file the archive
+
+### tar extract -x is used to extract
+tar -xf  archive.tar
+
+### compressed tar file
+tar -czf archive.tar.gz file1 file2 
