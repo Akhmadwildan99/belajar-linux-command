@@ -110,3 +110,23 @@ tar -xf  archive.tar
 
 ### compressed tar file
 tar -czf archive.tar.gz file1 file2 
+
+### alias command is used when we want to assign one or multiple command to variable
+alias ll='ls -al' ### be careful with quotes, if we use double quotes variable is resolved at definitio time, ussing single quotes it is resolved at invocation time
+alias ### will execute list of alias
+## And alias command is temporary except we define in the ~/.bashrc or ~/.zshrc or ~/.profile or ~/.bash_profile
+
+### cat command
+cat file1 ## read
+cat file1 file2 ## read multiple
+cat file1 file2 > file3 ## concatenate file1 and file2 into new file3
+cat file1 file2 >> file3 # concatenate file1 and file2 into new file3
+
+
+### less command is use when we will see the content of file but we do not want to edit the file
+less filename
+
+### tail command >>> print content the file
+tail -f filename
+tail -n 10 filename ## print 10 line
+tail -n +10 filename ## print start line 10 
