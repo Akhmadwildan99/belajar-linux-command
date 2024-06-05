@@ -130,3 +130,29 @@ less filename
 tail -f filename
 tail -n 10 filename ## print 10 line
 tail -n +10 filename ## print start line 10 
+
+## wc command >>> see the count of word | line | bytes
+ls -al | wc
+wc -w filename
+wc -l filename
+wc -c filename
+
+### grep command
+grep word filename
+grep -n word filename ## will output with the number
+grep -nC word filename ## -C option means context
+
+### sort command
+sort filename ## sort asc
+sort -r filename ## sort desc
+sort -n filename ## sort with number
+sort -u filename ## sort display unique / distinct  
+ls | sort ## sort ls
+
+### uniq command >> combine with sort
+sort  nakama.txt | uniq ## output distinct
+sort  nakama.txt | uniq -d ## -d option will print duplicates
+sort  nakama.txt | uniq -u  ## -d option will print uniq
+sort  nakama.txt | uniq -c ## -c option count character duplicate
+sort  nakama.txt | uniq -c | sort -nr ## -n option sort by number and -r option reverse / desc 
+
