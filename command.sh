@@ -164,5 +164,17 @@ diff -u filename anotherfilename ## like git, display different versions
 ### echo command
 echo "hello" ## displya hello
 echo "hello" >> filename ## append hello in the filename
+echo The cost is \$5 ## special character with \
+echo $(ls -al) ## will execute command
+
+
+### chown command
+chown user filename ## change the user of file
+chown user:group filename ## change the group of file
+chrgp group filename ## change the group of file
+
+### chmod command
+chmod a+rwx filename ## add all read write executable for the file
+
 
 
