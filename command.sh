@@ -156,3 +156,13 @@ sort  nakama.txt | uniq -u  ## -d option will print uniq
 sort  nakama.txt | uniq -c ## -c option count character duplicate
 sort  nakama.txt | uniq -c | sort -nr ## -n option sort by number and -r option reverse / desc 
 
+### diff command
+diff filename anotherfilename ## will show different content between two files
+diff -y filename anotherfilename ## compare 2 files line by line
+diff -u filename anotherfilename ## like git, display different versions
+
+### echo command
+echo "hello" ## displya hello
+echo "hello" >> filename ## append hello in the filename
+
+
