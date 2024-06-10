@@ -177,4 +177,9 @@ chrgp group filename ## change the group of file
 chmod a+rwx filename ## add all read write executable for the file
 
 
+### umask command
+umask ### will return the combinaiton of numbers that contains roles u= g= o=
+umask -s ### will return the roles u= g= o=
 
+### du command >>> display size the directory as a whole
+# -m display megabyte, -g gigabyte, -h display size human-readable, -a print the size of each file in the directories
